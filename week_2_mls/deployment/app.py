@@ -2,13 +2,13 @@ import streamlit as st
 import pandas as pd
 from huggingface_hub import hf_hub_download
 import joblib
-from config import HF_REPO_ID     #.  -  this doesnt work and the reference is not found on HF run
+from config import HF_REPO_ID     #this doesnt work and the reference is not found on HF run
 
 
 # HF_REPO_ID = "Nra/Machine-Failure-Prediction" # name is case sensitive
 
 # Download and load the model
-model_path = hf_hub_download(repo_id= HF_REPO_ID, filename="best_machine_failure_model_v1.joblib") # repo_id is case-sensitive
+model_path = hf_hub_download(repo_id=HF_REPO_ID, filename="best_machine_failure_model_v1.joblib") # repo_id is case-sensitive
 model = joblib.load(model_path)
 
 # Streamlit UI for Machine Failure Prediction
