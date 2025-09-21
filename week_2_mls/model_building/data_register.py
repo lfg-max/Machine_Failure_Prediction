@@ -4,7 +4,7 @@ import os
 from week_2_mls.config import HF_REPO_ID
 
 
-repo_id = HF_REPO_ID # repo_id is case-sensitive
+repo_id = HF_REPO_ID # repo_id is case-sensitive.
 repo_type = "dataset"
 
 # Initialize API client

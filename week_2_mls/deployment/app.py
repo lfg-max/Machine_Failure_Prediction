@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 from huggingface_hub import hf_hub_download
 import joblib
-from config import HF_REPO_ID     #this doesnt work and the reference is not found on HF run
+from config import HF_REPO_ID     #this doesnt work and the reference is not found on HF run.
 
 
 # HF_REPO_ID = "Nra/Machine-Failure-Prediction" # name is case sensitive

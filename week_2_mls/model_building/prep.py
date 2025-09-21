@@ -1,4 +1,4 @@
-# for data manipulation
+# for data manipulation.
 import pandas as pd
 import sklearn
 # for creating a folder
