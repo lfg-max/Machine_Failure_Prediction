@@ -18,13 +18,13 @@ from week_2_mls.config import HF_REPO_ID
 
 api = HfApi()
 
-Xtrain_path = f"hf://datasets/{HF_REPO_ID}/Xtrain.csv" # repo_id is case-sensitive
-Xtest_path = f"hf://datasets/{HF_REPO_ID}/Xtest.csv" # repo_id is case-sensitive
-ytrain_path = f"hf://datasets/{HF_REPO_ID}/ytrain.csv" # repo_id is case-sensitive
-ytest_path = f"hf://datasets/{HF_REPO_ID}/ytest.csv" # repo_id is case-sensitive
+Xtrain_path = "hf://datasets/"{HF_REPO_ID}"/Xtrain.csv" # repo_id is case-sensitive
+Xtest_path = "hf://datasets/"{HF_REPO_ID}"/Xtest.csv" # repo_id is case-sensitive
+ytrain_path = "hf://datasets/"{HF_REPO_ID}"/ytrain.csv" # repo_id is case-sensitive
+ytest_path = "hf://datasets/"{HF_REPO_ID}"/ytest.csv" # repo_id is case-sensitive
 
 Xtrain = pd.read_csv(Xtrain_path)
-Xtest = pd.read_csv(Xtest_path)
+Xtest = pd.read_csv(Xtest_path
 ytrain = pd.read_csv(ytrain_path)
 ytest = pd.read_csv(ytest_path)
 
