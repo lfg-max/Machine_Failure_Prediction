@@ -1,3 +1,4 @@
+# (nra_upd_01)
 # The '-m' flag tells Python to run a library module as an executable script
 # Instead of giving Python a file path to run, you give it a module path. This
 # simple change fundamentally alters how Python finds your files and solves many
@@ -26,15 +27,12 @@
 # of the rest of the house. Using 'python -m ...' is like walking in through the
 # front door—you can now navigate to any room using its proper address.
 
-name: Week 2 MLS pipeline
-
-# on:
-#   workflow_dispatch:
+name: Week 3 MLS pipeline
 
 on:
   push:
     branches:
-      - main  # Automatically triggers on push to the main branch  
+      - main  # Automatically triggers on push to the main branch
 
 jobs:
   register-dataset:
