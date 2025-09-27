@@ -1,3 +1,4 @@
+# (nra_upd_01)
 # for data manipulation
 import pandas as pd
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
@@ -17,7 +18,7 @@ from huggingface_hub.utils import RepositoryNotFoundError, HfHubHTTPError
 from week_3_mls.config import HF_REPO_ID
 import mlflow
 
-mlflow.set_tracking_uri("http://localhost:5000")
+# Remove this line: mlflow.set_tracking_uri("http://localhost:5000")
 mlflow.set_experiment("mlops-training-experiment")
 
 api = HfApi()
@@ -91,7 +92,7 @@ with mlflow.start_run():
 
     # Log best parameters separately in main run
     mlflow.log_params(grid_search.best_params_)
-    
+
     # Store and evaluate the best model
     best_model = grid_search.best_estimator_
 
