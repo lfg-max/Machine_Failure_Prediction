@@ -28,8 +28,13 @@
 
 name: Week 2 MLS pipeline
 
+# on:
+#   workflow_dispatch:
+
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - main  # Automatically triggers on push to the main branch  
 
 jobs:
   register-dataset:
