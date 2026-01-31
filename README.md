@@ -1,2 +1,0 @@
-# Machine_Failure_Prediction
-Machine_Failure_Prediction.
